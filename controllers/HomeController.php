@@ -2,7 +2,6 @@
     include('models/DatabaseModel.php');
     include('models/UserModel.php');
     include('models/ProductModel.php');
-    include('models/CommentModel.php');
 
     class HomeController
     {
@@ -69,7 +68,7 @@
                             move_uploaded_file($fileUpload['tmp_name'], $targetUpload);
                             $product = new ProductModel();
                             $result = $product->insertProduct($product_name, $product_des, $product_price, $fileName, $product_dateCreate, $product_dateUpdate);
-                            $this->redirect("index.php");
+                            $this->redirect("index.php?page=productList");
                         }
                     }
                     include('views/productForm.php');

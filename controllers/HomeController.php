@@ -27,8 +27,8 @@
                     $product = new ProductModel();
                     $result = $product->getProductById($_GET['productId']);
 
-                    $comment = new CommentModel();
-                    $resultComment = $comment->getCommentByProductId($_GET['productId']);
+                    // $comment = new CommentModel();
+                    // $resultComment = $comment->getCommentByProductId($_GET['productId']);
                     include('views/singlePage.php');
                     break;
                 case 'addProduct':

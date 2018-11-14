@@ -1,6 +1,6 @@
 
 <div class="row">
-    <h1>Product Add</h1>
+    <h1>Add Product</h1>
     <form method="post" enctype="multipart/form-data">
         <div class="col-lg-6">
             <div class="form-group <?php if(!empty($errName)) echo 'has-error'; ?>">
